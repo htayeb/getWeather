@@ -123,7 +123,6 @@ $(function(){
 "Carmacks, YT", 
 "Carman, MB", 
 "Cartwright, NL", 
-"Cartwright Junction (Trans-Labrador Hwy), NL", 
 "Cassiar, BC", 
 "Castlegar, BC", 
 "Chambly, QC", 
@@ -159,8 +158,6 @@ $(function(){
 "Colville Lake, NT", 
 "Comox, BC", 
 "Contrecoeur, QC", 
-"Coquihalla Highway - Hope to Merritt, HEF", 
-"Coquihalla Highway - Merritt to Kamloops, HEF", 
 "Coral Harbour, NU", 
 "Corner Brook, NL", 
 "Cornwall, ON", 
@@ -316,11 +313,6 @@ $(function(){
 "High Level, AB", 
 "High River, AB", 
 "Highvale, AB", 
-"Highway 16 - Smithers to Terrace, HEF", 
-"Highway 3 - Hope to Princeton via Allison Pass, HEF", 
-"Highway 3 - Paulson Summit to Kootenay Pass, HEF", 
-"Highway 97 - Clinton to 100 Mile House via Begbie Summit, HEF", 
-"Highway 97 - Pine Pass, HEF", 
 "Hinton, AB", 
 "Hope, BC", 
 "Hope Slide, BC", 
@@ -475,7 +467,7 @@ $(function(){
 "Mont-Laurier, QC", 
 "Mont-Tremblant, QC", 
 "Montmagny, QC", 
-"Montr√©al, QC", 
+"Montréal, QC", 
 "Montreal River Harbour, ON", 
 "Moose Jaw, SK", 
 "Moosomin, SK", 
@@ -519,7 +511,6 @@ $(function(){
 "Oak Point, MB", 
 "Oakville, ON", 
 "Ogoki, ON", 
-"Okanagan Connector - Merritt to Kelowna, HEF", 
 "Okotoks, AB", 
 "Old Crow, YT", 
 "Onefour, AB", 
@@ -673,8 +664,6 @@ $(function(){
 "Savant Lake, ON", 
 "Schefferville, QC", 
 "Scott, SK", 
-"Sea to Sky - Squamish to Whistler, HEF", 
-"Sea to Sky - West Vancouver Upper Levels to Squamish, HEF", 
 "Sechelt, BC", 
 "Sept-√éles, QC", 
 "Shamattawa, MB", 
@@ -767,7 +756,6 @@ $(function(){
 "Tracadie-Sheila, NB", 
 "Tracy, QC", 
 "Trail, BC", 
-"Trans-Canada Highway - Eagle Pass to Rogers Pass, HEF", 
 "Trenton, ON", 
 "Trois-Pistoles, QC", 
 "Trois-Rivi√®res, QC", 
@@ -858,7 +846,7 @@ $(function(){
 
     // Autocomplete to find the city and pro. Name 
     $('#cityName').autocomplete({ 
-        maxHeight: 200, 
+        minLength: 3, 
         source: cities
     });
 

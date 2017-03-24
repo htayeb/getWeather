@@ -2,6 +2,7 @@
 /******************************************************************
 General
 ******************************************************************/
+
 body {
 	background-image: url("../weatherImages/backgroundImage.jpg");
 	width: 100%;
@@ -16,6 +17,16 @@ body {
 	/*background-color: rgba(255,255,255,0.2);*/
 	margin-bottom: 10px;
 }
+
+.alert-box .alert .round{background-color: red;}
+
+
+p#notFound {
+	background-color: #cc4b37;
+	color: #fff;
+	border-radius: 5px;
+}
+
 .content {
 	
 	height: 44px;
@@ -221,8 +232,12 @@ Footer
 	height: 90px;
 }
 
-
-
+/*ul .ui-menu ui-widget ui-widget-content ui-autocomplete ui-front*/
+/*ul#ui-id-1 {
+	max-height: 200px;
+	height: 200px
+}
+*/
 
 
 

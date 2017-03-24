@@ -463,7 +463,7 @@
  { key_site: "/QC/s0000246_e.xml", city: "Mont-Laurier, QC"}, 
  { key_site: "/QC/s0000213_e.xml", city: "Mont-Tremblant, QC"}, 
  { key_site: "/QC/s0000334_e.xml", city: "Montmagny, QC"}, 
- { key_site: "/QC/s0000635_e.xml", city: "Montr√©al, QC"}, 
+ { key_site: "/QC/s0000635_e.xml", city: "Montréal, QC"}, 
  { key_site: "/ON/s0000762_e.xml", city: "Montreal River Harbour, ON"}, 
  { key_site: "/SK/s0000822_e.xml", city: "Moose Jaw, SK"}, 
  { key_site: "/SK/s0000733_e.xml", city: "Moosomin, SK"}, 

@@ -1,19 +1,22 @@
 
-
+// findWeather id, on click get the city name and search for site key to get 
+// the url for the city.
 $('#findWeather').click(function(){
 	var theSelectedCity = $('#cityName').val();
-    
+    $('#notFound').hide();
     if(theSelectedCity) {
         var result = citiesID.find(function (d) {
             if(d.city!=theSelectedCity){
-                $('#notFound').show();
+                
             }else if(d.city===theSelectedCity) {
                 return d.city === theSelectedCity;
             }
         }).key_site;
         
+    }else{
+
+    	$('#notFound').show();
     }
-    // console.log(result);
 	
     var url = "http://dd.weather.gc.ca/citypage_weather/xml"+result;
 
@@ -38,7 +41,7 @@ $('#findWeather').click(function(){
         var city = location.find("name");
         var region = location.find("region");
         var cityRegion = city[0].textContent + ' ' +region[0].textContent;
-        $('#theCity').html(cityRegion)
+        $('#theCity').html(theSelectedCity)
 
         // Weather data from current condition
         var currentCondition = xmlContent.find("currentConditions");
