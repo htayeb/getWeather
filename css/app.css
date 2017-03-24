@@ -4,7 +4,7 @@ General
 ******************************************************************/
 
 body {
-	background-image: url("../weatherImages/backgroundImage.jpg");
+	background-color: #F44336;
 	width: 100%;
 	height: 100%;
 	margin-top: 50px;
@@ -114,6 +114,15 @@ a {
 	margin-top: 15px;
 	opacity: 0.5;
 }
+h2.theCity {
+	height: 10em;
+	position: relative;
+	background: yellow;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: 0 -50% 0 0;
+	transform: translate(-50%, -50%) }
 h4.rightData {
 	display: inline;
 	margin-top: 3px;
