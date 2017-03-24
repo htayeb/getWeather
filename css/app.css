@@ -2,11 +2,122 @@
 /******************************************************************
 General
 ******************************************************************/
-.wrap
-{
-	width: 90%;
-	margin: 0 auto; 
+body {
+	background-image: url("../weatherImages/backgroundImage.jpg");
+	width: 100%;
+	height: 100%;
+	margin-top: 50px;
+	color: #fff;
+	font-family: 'Oxygen', sans-serif;
 }
+.city {
+	
+	height: 100px;
+	/*background-color: rgba(255,255,255,0.2);*/
+	margin-bottom: 10px;
+}
+.content {
+	
+	height: 44px;
+	background-color: rgba(255,255,255,0.2);
+	margin-top: 1px
+}
+#condition {
+	
+	/*background: url("../cloudynight.png") ;*/
+	width: 258px;
+	height: 258px;
+	border-image: none;
+	/*border: 3px solid transparent;*/
+	color: transparent;
+	opacity: .9;
+	/*border-radius: 160px;*/
+	/*border: 2px solid transparent;*/
+	
+
+}
+.conditionRain {
+	
+	background: url("../cImages/rain.png") ;
+	width: 258px;
+	height: 258px;
+	border-image: none;
+	color: transparent;
+	opacity: .9;
+}
+.conditionSnow{
+	
+	background: url("../cImages/snow.png") ;
+	width: 258px;
+	height: 258px;
+	border-image: none;
+	color: transparent;
+	opacity: .9;
+}
+.conditionCloudNight {
+	
+	background: url("../cImages/cloudynight.png") ;
+	width: 258px;
+	height: 258px;
+	border-image: none;
+	color: transparent;
+	opacity: .9;
+}
+.conditionCloudDay{
+	
+	background: url("../cImages/cloudyday.png") ;
+	width: 258px;
+	height: 258px;
+	border-image: none;
+	color: transparent;
+	opacity: .9;
+}
+.conditionNight{
+	
+	background: url("../cImages/night.png") ;
+	width: 258px;
+	height: 258px;
+	border-image: none;
+	color: transparent;
+	opacity: .9;
+}
+.conditionDay{
+	
+	background: url("../cImages/day.png") ;
+	width: 258px;
+	height: 258px;
+	border-image: none;
+	color: transparent;
+	opacity: .9;
+}
+
+form {
+	margin-top: 20px;
+}
+input {
+	
+	opacity: 0.5;
+	
+}
+a {
+	margin-top: 15px;
+	opacity: 0.5;
+}
+h4.rightData {
+	display: inline;
+	margin-top: 3px;
+}
+h1.temp {
+	display: inline;
+	margin-left: 90px;
+	font-size: 50px;
+}
+
+/*p#notFound {
+	display: inline;
+
+
+}*/
 /******************************************************************
 Hero
 ******************************************************************/
@@ -17,6 +128,9 @@ Hero
 	padding-bottom: 15%;
 
 
+}
+.cloudy {
+	background-image: url("../images/weather.png");
 }
 .logo
 {
@@ -31,8 +145,95 @@ Hero
 /******************************************************************
 Footer
 ******************************************************************/
-.footer{
-
-	background-color: #291F1E; 
-	height: 220px;
+.nextDays {
+	height: 200px;
+	/*width: 80%;*/
+	background-color: rgba(255,255,255,0.2);
+	margin: 2px;
 }
+.red {
+	color: #ff0000;
+
+}
+.green {
+	color: #00ff00;
+}
+.couldSmallDay {
+	background: url("../images/partlyCloudy.png");
+	width: 100px;
+	height: 100px;
+}
+
+.snowSmallDay {
+	background: url("../images/snow.png");
+	width: 100px;
+	height: 100px;
+}
+
+.showerSmallDay {
+	background: url("../images/dayshower.png");
+	width: 100px;
+	height: 100px;
+}
+
+.rainSmallDay {
+	background: url("../images/dayraining.png");
+	width: 100px;
+	height: 100px;
+}
+
+.clearSmallDay {
+	background: url("../images/sunny.png");
+	width: 100px;
+	height: 100px;
+}
+
+
+.couldSmallNight {
+	background: url("../images/nightpartlycloudy.png");
+	width: 100px;
+	height: 100px;
+}
+
+.snowSmallNight {
+	background: url("../images/nightSnowCloudy.png");
+	width: 100px;
+	height: 100px;
+}
+
+
+.rainSmallNight {
+	background: url("../images/nightraining.png");
+	width: 100px;
+	height: 100px;
+}
+
+.showerSmallNight {
+	background: url("../images/nightshower.png");
+	width: 100px;
+	height: 100px;
+}
+
+
+.clearSmallNight {
+	background: url("../images/clearnight.png");
+	width: 90px;
+	height: 90px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
