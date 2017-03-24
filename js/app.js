@@ -38,7 +38,7 @@ $('#findWeather').click(function(){
         var city = location.find("name");
         var region = location.find("region");
         var cityRegion = city[0].textContent + ' ' +region[0].textContent;
-        $('#theCity').html(cityRegion)
+        $('#theCity').html(theSelectedCity)
 
         // Weather data from current condition
         var currentCondition = xmlContent.find("currentConditions");
