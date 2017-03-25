@@ -3,13 +3,14 @@
 General
 ******************************************************************/
 
+
 body {
 	background-color: #F44336;
 	width: 100%;
 	height: 100%;
 	margin-top: 50px;
 	color: #fff;
-	font-family: 'Oxygen', sans-serif;
+	font-family: 'Dosis', sans-serif;
 }
 .city {
 	
@@ -41,11 +42,16 @@ p#notFound {
 	border-image: none;
 	/*border: 3px solid transparent;*/
 	color: transparent;
+	/*background-color: white;*/
 	opacity: .9;
 	/*border-radius: 160px;*/
 	/*border: 2px solid transparent;*/
 	
 
+}
+.test{
+	background-color: #4CAF50;
+	color: #0c3d5d;
 }
 .conditionRain {
 	
@@ -114,24 +120,27 @@ a {
 	margin-top: 15px;
 	opacity: 0.5;
 }
-h2.theCity {
-	height: 10em;
-	position: relative;
-	background: yellow;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin: 0 -50% 0 0;
-	transform: translate(-50%, -50%) }
+.theCity {
+
+	font-family: 'Dosis', sans-serif;
+	font-size: 36px; /* Some tweener fallback that doesn't look awful */
+	font-size: 5.4vw;
+	text-align: center;
+}
 h4.rightData {
 	display: inline;
 	margin-top: 3px;
 }
 h1.temp {
+	font-family: 'Dosis', sans-serif;
 	display: inline;
 	margin-left: 90px;
 	font-size: 50px;
+	font-size: 5.4vw;
+
+
 }
+
 
 /*p#notFound {
 	display: inline;
