@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="20988238-710e-4cad-af90-812b5047a9c7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/app.css" afterPath="$PROJECT_DIR$/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weather.html" afterPath="$PROJECT_DIR$/weather.html" />
-    </list>
+    <list default="true" id="20988238-710e-4cad-af90-812b5047a9c7" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -361,12 +357,12 @@
       <workItem from="1490352434672" duration="703000" />
       <workItem from="1490358846421" duration="27906000" />
       <workItem from="1490446218796" duration="58000" />
-      <workItem from="1490451169604" duration="4876000" />
+      <workItem from="1490451169604" duration="5000000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49528000" />
+    <option name="totallyTimeSpent" value="49652000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -378,7 +374,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="51" y="81" width="1932" height="1056" extended-state="0" />
+    <frame x="51" y="81" width="1932" height="1056" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16231732" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
