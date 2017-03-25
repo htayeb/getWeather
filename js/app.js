@@ -20,6 +20,7 @@ $('#findWeather').click(function(){
 	
     var url = "http://dd.weather.gc.ca/citypage_weather/xml"+result;
 
+
 /////////////////////////////////////////////////////////////////////////////
 
     var xmlSource = url;
@@ -107,6 +108,8 @@ $('#findWeather').click(function(){
         var temperature = currentCondition.find('temperature');
         temperature = temperature[0].textContent + ' &deg;C';
         $('#theTemp').html(temperature);
+        // Another Var to fill temp with large screens
+        $('#theTempL').html(temperature);
         
 
         // Find the winder and assign it
