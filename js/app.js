@@ -28,16 +28,19 @@ $('#findWeather').click(function(){
 
 function weather(urlAddress){
     var xmlSource = urlAddress;
-    // build the yql query. Could be just a string 
+    // build the yql query. Could be just a string
+    console.log(urlAddress)
+    // Cache function to get the most recent data from weather Canada while respecting YQL cache system
+    var cacheBuster = Math.floor((new Date().getTime()) / 3600 / 1000);
     var yqlURL = [
         "http://query.yahooapis.com/v1/public/yql",
         "?q=" + encodeURIComponent("select * from xml where url='" + xmlSource + "'"),
-        "&format=xml&callback=?"
+        "&format=xml&diagnostics=false&_nocache=" + cacheBuster + "&callback=?"
+
     ].join("");
 
-   
     $.getJSON(yqlURL, function(data){
-        // console.log(data.results[0]);
+        //console.log(data.results[0]);
         xmlContent = $(data.results[0]);
         // console.log(xmlContent);
         // The City name and the region
@@ -72,7 +75,8 @@ function weather(urlAddress){
         if(condition===""){
             var tempCon = currentCondition.find("temperature");
             tempCon = tempCon[0].textContent + ' C&deg;'
-            $('#theCondition').html(tempCon); 
+            $('#theCondition').html(tempCon);
+
         }else {
            $('#theCondition').html(condition); 
         }
@@ -114,6 +118,7 @@ function weather(urlAddress){
         $('#theTemp').html(temperature);
         // Another Var to fill temp with large screens
         $('#theTempL').html(temperature);
+        console.log(temperature);
         
 
         // Find the wind and assign it
