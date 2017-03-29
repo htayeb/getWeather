@@ -20,6 +20,7 @@ $('#findWeather').click(function(){
     }
     
     var url = "http://dd.weather.gc.ca/citypage_weather/xml"+result;
+    console.log(url);
     weather(url);
 });
 
@@ -38,7 +39,7 @@ function weather(urlAddress){
     $.getJSON(yqlURL, function(data){
         // console.log(data.results[0]);
         xmlContent = $(data.results[0]);
-
+        // console.log(xmlContent);
         // The City name and the region
         var location = xmlContent.find("location");
         var city = location.find("name");
@@ -59,8 +60,9 @@ function weather(urlAddress){
         // $('#theDay').html(theTime);
         var date = currentCondition.find("textSummary");
         date = date[0].textContent;
-        var patDate = /.+2017/
+        var patDate = /.+ 2017 /;
         date = patDate.exec(date);
+    
         $('#theDay').html(date);
         // find the general weather
         var condition = currentCondition.find("condition");
@@ -114,7 +116,7 @@ function weather(urlAddress){
         $('#theTempL').html(temperature);
         
 
-        // Find the winder and assign it
+        // Find the wind and assign it
         var wind = currentCondition.find("wind");
         var direction = wind.find("direction");
         direction=direction[0].textContent;
@@ -130,18 +132,18 @@ function weather(urlAddress){
         // First night or day for the next two nights and two days
        for (var i = 1; i<5; i++) {
     
-            var period1 = forcasts.find("period");
-            var temp = forcasts.find("temperature");
-            var summery = forcasts.find('textSummary');
+            var period = forcasts.find("period");       // period contains day/night data
+            var temp = forcasts.find("temperature");    // contains temperature data
+            var summery = forcasts.find('textSummary'); // contains weather summery such rain,sunny, cloudy ...
             summery = summery[i].textContent;
-            var dayName = '#day'+i+'Name';
-            var deyDeg = '#nextDay'+i+'Deg';
-            var imgIcone = 'img#day'+i+'Icon';
-            $(dayName).html(period1[i].textContent);
+            var dayName = '#day'+i+'Name';       // the id of day in html file
+            var deyDeg = '#nextDay'+i+'Deg';     // the id of temperature in html file
+            var imgIcone = 'img#day'+i+'Icon';   // the id of image in html file
+            $(dayName).html(period[i].textContent);
             $(deyDeg).html(temp[i].textContent+' &deg;C');
-            // plot the condition 
-            period1 = period1[i].textContent;
-            if(period1.search("night")!==-1){
+            // plot the condition select the niht or the day. and the condition raining or sunny or other.  
+            period = period[i].textContent;
+            if(period.search("night")!==-1){
                 if(summery.search("rain")!==-1){
                         $(imgIcone).attr('class','');  
                         $(imgIcone).addClass("rainSmallNight");
