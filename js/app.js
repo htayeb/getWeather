@@ -27,7 +27,10 @@ $('#findWeather').click(function(){
 
 function weather(urlAddress){
     var xmlSource = urlAddress;
-    // build the yql query. Could be just a string 
+    // build the yql query. Could be just a string
+    console.log(urlAddress)
+    // Cache function to get the most recent data from weather Canada while respecting YQL cache system
+    var cacheBuster = Math.floor((new Date().getTime()) / 3600 / 1000);
     var yqlURL = [
         "http://query.yahooapis.com/v1/public/yql",
         "?q=" + encodeURIComponent("select * from xml where url='" + xmlSource + "'"),
