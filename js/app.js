@@ -1,8 +1,9 @@
 
 // findWeather id, on click get the city name and search for site key to get 
 // the url for the city.
+
 $('#findWeather').click(function(){
-	var theSelectedCity = $('#cityName').val();
+    theSelectedCity = $('#cityName').val();
     $('#notFound').hide();
     if(theSelectedCity) {
         var result = citiesID.find(function (d) {
@@ -15,17 +16,17 @@ $('#findWeather').click(function(){
         
     }else{
 
-    	$('#notFound').show();
+        $('#notFound').show();
     }
-	
+    
     var url = "http://dd.weather.gc.ca/citypage_weather/xml"+result;
+    weather(url);
+});
 
 
-/////////////////////////////////////////////////////////////////////////////
 
-    var xmlSource = url;
-   
-
+function weather(urlAddress){
+    var xmlSource = urlAddress;
     // build the yql query. Could be just a string 
     var yqlURL = [
         "http://query.yahooapis.com/v1/public/yql",
@@ -37,11 +38,12 @@ $('#findWeather').click(function(){
     $.getJSON(yqlURL, function(data){
         // console.log(data.results[0]);
         xmlContent = $(data.results[0]);
+
         // The City name and the region
         var location = xmlContent.find("location");
         var city = location.find("name");
         var region = location.find("region");
-        var cityRegion = city[0].textContent + ' ' +region[0].textContent;
+        // var cityRegion = city[0].textContent + ' ' +region[0].textContent;
         $('#theCity').html(theSelectedCity)
 
         // Weather data from current condition
@@ -125,197 +127,56 @@ $('#findWeather').click(function(){
         var forecastGroup  = xmlContent.find("forecastGroup");
         var forcasts = forecastGroup.find('forecast');
 
-        // First night or day
-        var forecast0 = forcasts[0];
-        var period0 = forcasts.find("period");
-        var temp0 = forcasts.find("temperature");
-        var summery0 = forcasts.find('textSummary');
-        summery0 = summery0[0].textContent;
-        $('#day1Name').html(period0[0].textContent);
-        $('#nextDay1Deg').html(temp0[0].textContent+' &deg;C');
-        // plot the condition 
-        period0 = period0[0].textContent;
-        if(period0.search("night")!==-1){
-            if(summery0.search("rain")!==-1){
-                    $('img#day1Icon').attr('class','');  
-                    $('img#day1Icon').addClass("rainSmallNight");
-                }else if(summery0.search("snow") !==-1) {
-                    $('img#day1Icon').attr('class','');  
-                    $('img#day1Icon').addClass("snowSmallNight");
-                }else if(summery0.search("cloud") !==-1) {
-                    $('img#day1Icon').attr('class','');  
-                    $('img#day1Icon').addClass("couldSmallNight");
-                }else if(summery0.search("shower") !==-1) {
-                    $('img#day1Icon').attr('class','');  
-                    $('img#day1Icon').addClass("showerSmallNight");
-                } else {
-                    $('img#day1Icon').attr('class','');  
-                    $('img#day1Icon').addClass("clearSmallNight");
-                }
-        } else {
-            $('img#day1Icon').attr('class','');  
-                if(summery0.search("rain")!==-1){
-                    $('img#day1Icon').attr('class','');  
-                    $('img#day1Icon').addClass("rainSmallDay");
-                }else if(summery0.search("snow") !==-1) {
-                    $('img#day1Icon').attr('class','');  
-                    $('img#day1Icon').addClass("snowSmallDay");
-                }else if(summery0.search("cloud") !==-1) {
-                    $('img#day1Icon').attr('class','');  
-                    $('img#day1Icon').addClass("couldSmallDay");
-                }else if(summery0.search("shower") !==-1) {
-                    $('img#day1Icon').attr('class','');  
-                    $('img#day1Icon').addClass("showerSmallDay");
-                } else {
-                    $('img#day1Icon').attr('class','');  
-                    $('img#day1Icon').addClass("clearSmallDay");
-                }      
-        }
-        // Next day or night
-        var forecast1 = forcasts[1];
-        var period1 = forcasts.find("period");
-        var temp1 = forcasts.find("temperature");
-        var summery1 = forcasts.find('textSummary');
-        summery1 = summery1[1].textContent;
-        $('#day2Name').html(period1[1].textContent);
-        $('#nextDay2Deg').html(temp1[1].textContent+' &deg;C');
-        // plot the condition 
-        period1 = period1[1].textContent;
-        if(period1.search("night")!==-1){
-            if(summery1.search("rain")!==-1){
-                    $('img#day2Icon').attr('class','');  
-                    $('img#day2Icon').addClass("rainSmallNight");
-                }else if(summery1.search("snow") !==-1) {
-                    $('img#day2Icon').attr('class','');  
-                    $('img#day2Icon').addClass("snowSmallNight");
-                }else if(summery1.search("cloud") !==-1) {
-                    $('img#day2Icon').attr('class','');  
-                    $('img#day2Icon').addClass("couldSmallNight");
-                }else if(summery1.search("shower") !==-1) {
-                    $('img#day2Icon').attr('class','');  
-                    $('img#day2Icon').addClass("showerSmallNight");
-                } else {
-                    $('img#day2Icon').attr('class','');  
-                    $('img#day2Icon').addClass("clearSmallNight");
-                }
-        } else {
-            $('img#day2Icon').attr('class','');  
-                if(summery1.search("rain")!==-1){
-                    $('img#day2Icon').attr('class','');  
-                    $('img#day2Icon').addClass("rainSmallDay");
-                }else if(summery1.search("snow") !==-1) {
-                    $('img#day2Icon').attr('class','');  
-                    $('img#day2Icon').addClass("snowSmallDay");
-                }else if(summery1.search("cloud") !==-1) {
-                    $('img#day2Icon').attr('class','');  
-                    $('img#day2Icon').addClass("couldSmallDay");
-                }else if(summery1.search("shower") !==-1) {
-                    $('img#day2Icon').attr('class','');  
-                    $('img#day2Icon').addClass("showerSmallDay");
-                } else {
-                    $('img#day2Icon').attr('class','');  
-                    $('img#day2Icon').addClass("clearSmallDay");
-                }      
-        }
-                var forecast2 = forcasts[2];
-        var period2 = forcasts.find("period");
-        var temp2 = forcasts.find("temperature");
-        var summery2 = forcasts.find('textSummary');
-        summery2 = summery2[2].textContent;
-        $('#day3Name').html(period2[2].textContent);
-        $('#nextDay3Deg').html(temp2[2].textContent+' &deg;C');
-        // plot the condition 
-        period2 = period2[2].textContent;
-        if(period2.search("night")!==-1){
-            if(summery2.search("rain")!==-1){
-                    $('img#day3Icon').attr('class','');  
-                    $('img#day3Icon').addClass("rainSmallNight");
-                }else if(summery2.search("snow") !==-1) {
-                    $('img#day3Icon').attr('class','');  
-                    $('img#day3Icon').addClass("snowSmallNight");
-                }else if(summery2.search("cloud") !==-1) {
-                    $('img#day3Icon').attr('class','');  
-                    $('img#day3Icon').addClass("couldSmallNight");
-                }else if(summery2.search("shower") !==-1) {
-                    $('img#day3Icon').attr('class','');  
-                    $('img#day3Icon').addClass("showerSmallNight");
-                } else {
-                    $('img#day3Icon').attr('class','');  
-                    $('img#day3Icon').addClass("clearSmallNight");
-                }
-        } else {
-            $('img#day3Icon').attr('class','');  
-                if(summery2.search("rain")!==-1){
-                    $('img#day3Icon').attr('class','');  
-                    $('img#day3Icon').addClass("rainSmallDay");
-                }else if(summery2.search("snow") !==-1) {
-                    $('img#day3Icon').attr('class','');  
-                    $('img#day3Icon').addClass("snowSmallDay");
-                }else if(summery2.search("cloud") !==-1) {
-                    $('img#day3Icon').attr('class','');  
-                    $('img#day3Icon').addClass("couldSmallDay");
-                }else if(summery2.search("shower") !==-1) {
-                    $('img#day3Icon').attr('class','');  
-                    $('img#day3Icon').addClass("showerSmallDay");
-                } else {
-                    $('img#day3Icon').attr('class','');  
-                    $('img#day3Icon').addClass("clearSmallDay");
-                }      
-        }
-        // Next day or night
-                var forecast3 = forcasts[3];
-        var period3 = forcasts.find("period");
-        var temp3 = forcasts.find("temperature");
-        var summery3 = forcasts.find('textSummary');
-        summery3 = summery3[3].textContent;
-        $('#day4Name').html(period3[3].textContent);
-        $('#nextDay4Deg').html(temp3[3].textContent+' &deg;C');
-        // plot the condition 
-        period3 = period3[3].textContent;
-        if(period3.search("night")!==-1){
-            if(summery3.search("rain")!==-1){
-                    $('img#day4Icon').attr('class','');  
-                    $('img#day4Icon').addClass("rainSmallNight");
-                }else if(summery3.search("snow") !==-1) {
-                    $('img#day4Icon').attr('class','');  
-                    $('img#day4Icon').addClass("snowSmallNight");
-                }else if(summery3.search("cloud") !==-1) {
-                    $('img#day4Icon').attr('class','');  
-                    $('img#day4Icon').addClass("couldSmallNight");
-                }else if(summery3.search("shower") !==-1) {
-                    $('img#day4Icon').attr('class','');  
-                    $('img#day4Icon').addClass("showerSmallNight");
-                } else {
-                    $('img#day4Icon').attr('class','');  
-                    $('img#day4Icon').addClass("clearSmallNight");
-                }
-        } else {
-            $('img#day4Icon').attr('class','');  
-                if(summery3.search("rain")!==-1){
-                    $('img#day4Icon').attr('class','');  
-                    $('img#day4Icon').addClass("rainSmallDay");
-                }else if(summery3.search("snow") !==-1) {
-                    $('img#day4Icon').attr('class','');  
-                    $('img#day4Icon').addClass("snowSmallDay");
-                }else if(summery3.search("cloud") !==-1) {
-                    $('img#day4Icon').attr('class','');  
-                    $('img#day4Icon').addClass("couldSmallDay");
-                }else if(summery3.search("shower") !==-1) {
-                    $('img#day4Icon').attr('class','');  
-                    $('img#day4Icon').addClass("showerSmallDay");
-                } else {
-                    $('img#day4Icon').attr('class','');  
-                    $('img#day4Icon').addClass("clearSmallDay");
-                }      
-        }
-
-
-
-});
-
-
-
-
-
-
- })
+        // First night or day for the next two nights and two days
+       for (var i = 1; i<5; i++) {
+    
+            var period1 = forcasts.find("period");
+            var temp = forcasts.find("temperature");
+            var summery = forcasts.find('textSummary');
+            summery = summery[i].textContent;
+            var dayName = '#day'+i+'Name';
+            var deyDeg = '#nextDay'+i+'Deg';
+            var imgIcone = 'img#day'+i+'Icon';
+            $(dayName).html(period1[i].textContent);
+            $(deyDeg).html(temp[i].textContent+' &deg;C');
+            // plot the condition 
+            period1 = period1[i].textContent;
+            if(period1.search("night")!==-1){
+                if(summery.search("rain")!==-1){
+                        $(imgIcone).attr('class','');  
+                        $(imgIcone).addClass("rainSmallNight");
+                    }else if(summery.search("snow") !==-1) {
+                        $(imgIcone).attr('class','');  
+                        $(imgIcone).addClass("snowSmallNight");
+                    }else if(summery.search("cloud") !==-1) {
+                        $(imgIcone).attr('class','');  
+                        $(imgIcone).addClass("couldSmallNight");
+                    }else if(summery.search("shower") !==-1) {
+                        $(imgIcone).attr('class','');  
+                        $(imgIcone).addClass("showerSmallNight");
+                    } else {
+                        $(imgIcone).attr('class','');  
+                        $(imgIcone).addClass("clearSmallNight");
+                    }
+            } else {
+                $(imgIcone).attr('class','');  
+                    if(summery.search("rain")!==-1){
+                        $(imgIcone).attr('class','');  
+                        $(imgIcone).addClass("rainSmallDay");
+                    }else if(summery.search("snow") !==-1) {
+                        $(imgIcone).attr('class','');  
+                        $(imgIcone).addClass("snowSmallDay");
+                    }else if(summery.search("cloud") !==-1) {
+                        $(imgIcone).attr('class','');  
+                        $(imgIcone).addClass("couldSmallDay");
+                    }else if(summery.search("shower") !==-1) {
+                        $(imgIcone).attr('class','');  
+                        $(imgIcone).addClass("showerSmallDay");
+                    } else {
+                        $(imgIcone).attr('class','');  
+                        $(imgIcone).addClass("clearSmallDay");
+                    }      
+            }//else 
+        }//for loop
+    });//getJSON
+}//weather
