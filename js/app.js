@@ -31,12 +31,12 @@ function weather(urlAddress){
     var yqlURL = [
         "http://query.yahooapis.com/v1/public/yql",
         "?q=" + encodeURIComponent("select * from xml where url='" + xmlSource + "'"),
-        "&format=xml&callback=?"
+        "&format=xml&diagnostics=false&_nocache=" + cacheBuster + "&callback=?"
+
     ].join("");
 
-   
     $.getJSON(yqlURL, function(data){
-        // console.log(data.results[0]);
+        //console.log(data.results[0]);
         xmlContent = $(data.results[0]);
 
         // The City name and the region
@@ -70,7 +70,8 @@ function weather(urlAddress){
         if(condition===""){
             var tempCon = currentCondition.find("temperature");
             tempCon = tempCon[0].textContent + ' C&deg;'
-            $('#theCondition').html(tempCon); 
+            $('#theCondition').html(tempCon);
+
         }else {
            $('#theCondition').html(condition); 
         }
@@ -112,6 +113,7 @@ function weather(urlAddress){
         $('#theTemp').html(temperature);
         // Another Var to fill temp with large screens
         $('#theTempL').html(temperature);
+        console.log(temperature);
         
 
         // Find the winder and assign it
