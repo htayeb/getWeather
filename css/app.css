@@ -5,12 +5,19 @@ General
 
 
 body {
-	background-color: #F44336;
+	/*background-color: #F44336;*/
+	background-size:200% 200%;
+	background: url("../images/wallpaper.png") no-repeat;
 	width: 100%;
 	height: 100%;
 	margin-top: 50px;
 	color: #fff;
 	font-family: 'Dosis', sans-serif;
+}
+#first{
+	background-size: contain;
+	width: 100%;
+	height: 100%;
 }
 .city {
 	
@@ -28,11 +35,18 @@ p#notFound {
 	border-radius: 5px;
 }
 
+/*.content {*/
+	/**/
+	/*height: 44px;*/
+	/*background-color: rgba(255,255,255,0.2);*/
+	/*margin-top: 1px*/
+/*}*/
 .content {
-	
 	height: 44px;
-	background-color: rgba(255,255,255,0.2);
-	margin-top: 1px
+	background-color: rgb(221, 235, 241);
+	margin-top: 21px;
+	border-radius: 25px;
+	color: #36445d;
 }
 #condition {
 	
@@ -42,8 +56,9 @@ p#notFound {
 	border-image: none;
 	/*border: 3px solid transparent;*/
 	color: transparent;
+	border: none;
 	/*background-color: white;*/
-	opacity: .9;
+
 	/*border-radius: 160px;*/
 	/*border: 2px solid transparent;*/
 	
@@ -55,16 +70,21 @@ p#notFound {
 }
 .conditionRain {
 	
-	background: url("../cImages/rain.png") ;
-	width: 258px;
-	height: 258px;
+	/*background: url("../cImages/rain.png") ;*/
+	background: url("../icons/rainy-weather.png")no-repeat top left;
+	background-size: contain;
+	fill: #d33b53;
+	/*width: 258px;*/
+	/*height: 258px;*/
 	border-image: none;
+
 	color: transparent;
 	opacity: .9;
 }
 .conditionSnow{
 	
-	background: url("../cImages/snow.png") ;
+	background: url("../icons/snow-weather.png")no-repeat top left;
+	background-size: contain;
 	width: 258px;
 	height: 258px;
 	border-image: none;
@@ -73,7 +93,8 @@ p#notFound {
 }
 .conditionCloudNight {
 	
-	background: url("../cImages/cloudynight.png") ;
+	background: url("../icons/mostly-cloudy-night.png")no-repeat top left;
+	background-size: contain;
 	width: 258px;
 	height: 258px;
 	border-image: none;
@@ -82,16 +103,20 @@ p#notFound {
 }
 .conditionCloudDay{
 	
-	background: url("../cImages/cloudyday.png") ;
-	width: 258px;
-	height: 258px;
+	/*background: url("../cImages/cloudyday.png") ;*/
+	background: url("../icons/mostly-cloudy.png")no-repeat top left;
+	background-size: contain;
+	fill: #94d31b;
+	/*width: 258px;*/
+	/*height: 258px;*/
 	border-image: none;
 	color: transparent;
 	opacity: .9;
 }
 .conditionNight{
 	
-	background: url("../cImages/night.png") ;
+	background: url("../icons/clear-night.png")no-repeat top left;
+	background-size: contain;
 	width: 258px;
 	height: 258px;
 	border-image: none;
@@ -100,7 +125,8 @@ p#notFound {
 }
 .conditionDay{
 	
-	background: url("../cImages/day.png") ;
+	background: url("../icons/clear-day.png")no-repeat top left;
+	background-size: contain;
 	width: 258px;
 	height: 258px;
 	border-image: none;
@@ -124,19 +150,36 @@ a {
 
 	font-family: 'Dosis', sans-serif;
 	font-size: 36px; /* Some tweener fallback that doesn't look awful */
-	font-size: 5.4vw;
+	font-size: 3.5em;
+	text-align: center;
+}
+.theTemp {
+
+	font-family: 'Dosis', sans-serif;
+	font-size: 36px; /* Some tweener fallback that doesn't look awful */
+	font-size: 3.5em;
+	text-align: center;
+}
+.love {
+
+	font-family: 'Dosis', sans-serif;
+	font-size: 36px; /* Some tweener fallback that doesn't look awful */
+	font-size: 1.5em;
 	text-align: center;
 }
 h4.rightData {
 	display: inline;
 	margin-top: 3px;
+	line-height: 2.4;
+	text-align: center;
 }
 h1.temp {
 	font-family: 'Dosis', sans-serif;
 	display: inline;
 	margin-left: 90px;
 	font-size: 50px;
-	font-size: 5.4vw;
+	font-size: 3.5em;
+	text-align: center;
 
 
 }
@@ -179,6 +222,7 @@ Footer
 	/*width: 80%;*/
 	background-color: rgba(255,255,255,0.2);
 	margin: 2px;
+	border-radius: 25px;
 }
 .red {
 	color: #ff0000;
@@ -188,64 +232,74 @@ Footer
 	color: #00ff00;
 }
 .couldSmallDay {
-	background: url("../images/partlyCloudy.png");
+	background: url("../icons/partly-cloudy.png");
+	background-size: contain;
 	width: 100px;
 	height: 100px;
 }
 
 .snowSmallDay {
-	background: url("../images/snow.png");
+	background: url("../icons/snow-day.png");
+	background-size: contain;
 	width: 100px;
 	height: 100px;
 }
 
 .showerSmallDay {
-	background: url("../images/dayshower.png");
+	background: url("../icons/rainy-day.png");
+	background-size: contain;
 	width: 100px;
 	height: 100px;
 }
 
 .rainSmallDay {
-	background: url("../images/dayraining.png");
+	background: url("../icons/rainy-weather.png");
+	background-size: contain;
 	width: 100px;
 	height: 100px;
 }
 
 .clearSmallDay {
-	background: url("../images/sunny.png");
+	background: url("../icons/clear-day.png");
+	background-size: contain;
 	width: 100px;
 	height: 100px;
 }
 
 
 .couldSmallNight {
-	background: url("../images/nightpartlycloudy.png");
+	background: url("../icons/mostly-cloudy-night.png");
+	background-size: contain;
 	width: 100px;
 	height: 100px;
 }
 
 .snowSmallNight {
-	background: url("../images/nightSnowCloudy.png");
+	background: url("../icons/snow-night.png");
+	background-size: contain;
 	width: 100px;
 	height: 100px;
 }
 
 
 .rainSmallNight {
-	background: url("../images/nightraining.png");
+	background: url("../icons/rainy-night.png");
+	background-size: contain;
 	width: 100px;
 	height: 100px;
 }
 
 .showerSmallNight {
-	background: url("../images/nightshower.png");
+	background: url("../icons/rainy-weather.png");
+	background-size: contain;
 	width: 100px;
 	height: 100px;
 }
 
 
 .clearSmallNight {
-	background: url("../images/clearnight.png");
+	background: url("../icons/clear-night.png")no-repeat top left;
+	background-size: contain;
 	width: 90px;
 	height: 90px;
 }

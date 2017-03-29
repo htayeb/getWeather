@@ -24,6 +24,7 @@ $('#findWeather').click(function(){
 });
 
 
+
 function weather(urlAddress){
     var xmlSource = urlAddress;
     // build the yql query. Could be just a string 
@@ -109,6 +110,8 @@ function weather(urlAddress){
         var temperature = currentCondition.find('temperature');
         temperature = temperature[0].textContent + ' &deg;C';
         $('#theTemp').html(temperature);
+        // Another Var to fill temp with large screens
+        $('#theTempL').html(temperature);
         
 
         // Find the winder and assign it
