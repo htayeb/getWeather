@@ -24,35 +24,26 @@ $('#findWeather').click(function(){
     weather(url);
 });
 
-
-
 function weather(urlAddress){
     var xmlSource = urlAddress;
-    // build the yql query. Could be just a string
-    console.log(urlAddress)
     // Cache function to get the most recent data from weather Canada while respecting YQL cache system
-    // var cacheBuster = Math.floor((new Date().getTime()) / 3600 / 1000);
     var cacheBuster = Math.floor((new Date().getTime()) / 1200 / 1000);
+    // build the yql query. Could be just a string
     var yqlURL = [
         "http://query.yahooapis.com/v1/public/yql",
         "?q=" + encodeURIComponent("select * from xml where url='" + xmlSource + "'"),
         "&format=xml&_nocache=" + cacheBuster +"callback=cbfunc&_maxage=3600"
-        // &_nocache=" + cacheBuster +&_maxage=1200
-
     ].join("");
+    //Override Jquery .ajax call to enable cache
     $.ajax({
         url: yqlURL,
         dataType: 'jsonp',
         cache: true,
         jsonpCallback: 'cbfunc'
     });
-    // $.getScript(yqlURL, function(data) {  } );
-    console.log(yqlURL);
+
     window.cbfunc = function(data){
-        console.log(yqlURL);
-        //console.log(data.results[0]);
         xmlContent = $(data.results[0]);
-        // console.log(xmlContent);
         // The City name and the region
         var location = xmlContent.find("location");
         var city = location.find("name");
@@ -195,5 +186,5 @@ function weather(urlAddress){
                 }
             }//else
         }//for loop
-    }//getJSON
+    }//window.cbfunc
 }//weather
