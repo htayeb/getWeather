@@ -172,6 +172,7 @@ h4.rightData {
 	margin-top: 3px;
 	line-height: 2.4;
 	text-align: center;
+	white-space: nowrap;
 }
 h1.temp {
 	font-family: 'Dosis', sans-serif;
