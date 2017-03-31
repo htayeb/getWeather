@@ -3,7 +3,44 @@
 General
 ******************************************************************/
 
+/******************************************************************
+Alert Box
+******************************************************************/
+.alert-box {
+	padding: 1.3rem;
+	border-width: 0 0 0 0.35rem;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.3rem;
+}
+.alert-box.radius {
+	border-radius: 1.6rem;
+}
 
+.alert-box.alert {
+	border-left-color: #f22613;
+	background-color: #f77d71;
+}
+.alert-box.alert strong {
+	color: #f5f5f5;
+    text-transform: capitalize;
+}
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: #36445d;
+}
+/*================================================================*/
 body {
 	/*background-color: #F44336;*/
 	background-size:200% 200%;

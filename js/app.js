@@ -81,12 +81,23 @@ function weather(urlAddress){
         }else {
             $('#theCondition').html(condition);
         }
+        // Display the current weather warnings if they exist
+        var alert = xmlContent.find("warnings");console.log(alert);
+        var checkAlert = alert[0].attributes.length;
+        if (checkAlert >= 1) {
+            alert = alert.find("event").attr('type', 'warning');
+            alert = alert[0].outerHTML;
+            alert = alert.match(/(?:"[^"]*"|^[^"]*$)/)[0].replace(/"/g, "");
+            alert = alert.toLowerCase();
+            $('.myWarning').attr('style','display: initial;');
+            $('.warningDesc').html(alert);
+        }else{
+            $('.myWarning').attr('style','display: none;');
+        }
         // Display the current condition
         var hour = xmlContent.find("dateTime").attr('zone', 'PDT');
-
         hour = hour.find('hour');
-        hour = hour[1].textContent
-
+        hour = hour[1].textContent;
 
         $('img#condition').attr('class','');
         if((condition.search('Cloudy'))!==-1){
