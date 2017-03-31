@@ -8,17 +8,17 @@ $('#findWeather').click(function(){
     if(theSelectedCity) {
         var result = citiesID.find(function (d) {
             if(d.city!=theSelectedCity){
-                
+
             }else if(d.city===theSelectedCity) {
                 return d.city === theSelectedCity;
             }
         }).key_site;
-        
+
     }else{
 
         $('#notFound').show();
     }
-    
+
     var url = "http://dd.weather.gc.ca/citypage_weather/xml"+result;
     console.log(url);
     weather(url);
@@ -31,15 +31,25 @@ function weather(urlAddress){
     // build the yql query. Could be just a string
     console.log(urlAddress)
     // Cache function to get the most recent data from weather Canada while respecting YQL cache system
-    var cacheBuster = Math.floor((new Date().getTime()) / 3600 / 1000);
+    // var cacheBuster = Math.floor((new Date().getTime()) / 3600 / 1000);
+    var cacheBuster = Math.floor((new Date().getTime()) / 1200 / 1000);
     var yqlURL = [
         "http://query.yahooapis.com/v1/public/yql",
         "?q=" + encodeURIComponent("select * from xml where url='" + xmlSource + "'"),
-        "&format=xml&diagnostics=false&_nocache=" + cacheBuster + "&callback=?"
+        "&format=xml&_nocache=" + cacheBuster +"callback=cbfunc&_maxage=3600"
+        // &_nocache=" + cacheBuster +&_maxage=1200
 
     ].join("");
-
-    $.getJSON(yqlURL, function(data){
+    $.ajax({
+        url: yqlURL,
+        dataType: 'jsonp',
+        cache: true,
+        jsonpCallback: 'cbfunc'
+    });
+    // $.getScript(yqlURL, function(data) {  } );
+    console.log(yqlURL);
+    window.cbfunc = function(data){
+        console.log(yqlURL);
         //console.log(data.results[0]);
         xmlContent = $(data.results[0]);
         // console.log(xmlContent);
@@ -52,7 +62,7 @@ function weather(urlAddress){
 
         // Weather data from current condition
         var currentCondition = xmlContent.find("currentConditions");
-        // find the time and date 
+        // find the time and date
         var year = currentCondition.find("year");
         year = year[0].textContent;
         var month = currentCondition.find("month");
@@ -65,7 +75,7 @@ function weather(urlAddress){
         date = date[0].textContent;
         var patDate = /.+ 2017 /;
         date = patDate.exec(date);
-    
+
         $('#theDay').html(date);
         // find the general weather
         var condition = currentCondition.find("condition");
@@ -78,16 +88,16 @@ function weather(urlAddress){
             $('#theCondition').html(tempCon);
 
         }else {
-           $('#theCondition').html(condition); 
+            $('#theCondition').html(condition);
         }
         // Display the current condition
         var hour = xmlContent.find("dateTime").attr('zone', 'PDT');
-        
+
         hour = hour.find('hour');
         hour = hour[1].textContent
-        
-        
-        $('img#condition').attr('class','');  
+
+
+        $('img#condition').attr('class','');
         if((condition.search('Cloudy'))!==-1){
             if(hour >=6 && hour <=19){
                 $('img#condition').addClass('conditionCloudDay')
@@ -95,16 +105,16 @@ function weather(urlAddress){
                 $('img#condition').addClass('conditionCloudNight')
             }
         } else if((condition.search('Snow'))!==-1){
-            $('img#condition').attr('class',''); 
+            $('img#condition').attr('class','');
             $('img#condition').addClass('conditionSnow');
 
         } else if((condition.search('Rain'))!==-1){
-            $('img#condition').attr('class',''); 
-            $('img#condition').addClass('conditionRain') 
+            $('img#condition').attr('class','');
+            $('img#condition').addClass('conditionRain')
 
         } else {
-            $('img#condition').attr('class',''); 
-             
+            $('img#condition').attr('class','');
+
             if(hour >=6 && hour <=19){
                 $('img#condition').addClass('conditionDay')
             }else {
@@ -119,7 +129,6 @@ function weather(urlAddress){
         // Another Var to fill temp with large screens
         $('#theTempL').html(temperature);
         console.log(temperature);
-        
 
         // Find the wind and assign it
         var wind = currentCondition.find("wind");
@@ -136,7 +145,7 @@ function weather(urlAddress){
 
         // First night or day for the next two nights and two days
        for (var i = 1; i<5; i++) {
-    
+   
             var period = forcasts.find("period");       // period contains day/night data
             var temp = forcasts.find("temperature");    // contains temperature data
             var summery = forcasts.find('textSummary'); // contains weather summery such rain,sunny, cloudy ...
@@ -146,44 +155,45 @@ function weather(urlAddress){
             var imgIcone = 'img#day'+i+'Icon';   // the id of image in html file
             $(dayName).html(period[i].textContent);
             $(deyDeg).html(temp[i].textContent+' &deg;C');
+
             // plot the condition select the niht or the day. and the condition raining or sunny or other.  
             period = period[i].textContent;
             if(period.search("night")!==-1){
                 if(summery.search("rain")!==-1){
-                        $(imgIcone).attr('class','');  
-                        $(imgIcone).addClass("rainSmallNight");
-                    }else if(summery.search("snow") !==-1) {
-                        $(imgIcone).attr('class','');  
-                        $(imgIcone).addClass("snowSmallNight");
-                    }else if(summery.search("cloud") !==-1) {
-                        $(imgIcone).attr('class','');  
-                        $(imgIcone).addClass("couldSmallNight");
-                    }else if(summery.search("shower") !==-1) {
-                        $(imgIcone).attr('class','');  
-                        $(imgIcone).addClass("showerSmallNight");
-                    } else {
-                        $(imgIcone).attr('class','');  
-                        $(imgIcone).addClass("clearSmallNight");
-                    }
+                    $(imgIcone).attr('class','');
+                    $(imgIcone).addClass("rainSmallNight");
+                }else if(summery.search("snow") !==-1) {
+                    $(imgIcone).attr('class','');
+                    $(imgIcone).addClass("snowSmallNight");
+                }else if(summery.search("cloud") !==-1) {
+                    $(imgIcone).attr('class','');
+                    $(imgIcone).addClass("couldSmallNight");
+                }else if(summery.search("shower") !==-1) {
+                    $(imgIcone).attr('class','');
+                    $(imgIcone).addClass("showerSmallNight");
+                } else {
+                    $(imgIcone).attr('class','');
+                    $(imgIcone).addClass("clearSmallNight");
+                }
             } else {
-                $(imgIcone).attr('class','');  
-                    if(summery.search("rain")!==-1){
-                        $(imgIcone).attr('class','');  
-                        $(imgIcone).addClass("rainSmallDay");
-                    }else if(summery.search("snow") !==-1) {
-                        $(imgIcone).attr('class','');  
-                        $(imgIcone).addClass("snowSmallDay");
-                    }else if(summery.search("cloud") !==-1) {
-                        $(imgIcone).attr('class','');  
-                        $(imgIcone).addClass("couldSmallDay");
-                    }else if(summery.search("shower") !==-1) {
-                        $(imgIcone).attr('class','');  
-                        $(imgIcone).addClass("showerSmallDay");
-                    } else {
-                        $(imgIcone).attr('class','');  
-                        $(imgIcone).addClass("clearSmallDay");
-                    }      
-            }//else 
+                $(imgIcone).attr('class','');
+                if(summery.search("rain")!==-1){
+                    $(imgIcone).attr('class','');
+                    $(imgIcone).addClass("rainSmallDay");
+                }else if(summery.search("snow") !==-1) {
+                    $(imgIcone).attr('class','');
+                    $(imgIcone).addClass("snowSmallDay");
+                }else if(summery.search("cloud") !==-1) {
+                    $(imgIcone).attr('class','');
+                    $(imgIcone).addClass("couldSmallDay");
+                }else if(summery.search("shower") !==-1) {
+                    $(imgIcone).attr('class','');
+                    $(imgIcone).addClass("showerSmallDay");
+                } else {
+                    $(imgIcone).attr('class','');
+                    $(imgIcone).addClass("clearSmallDay");
+                }
+            }//else
         }//for loop
-    });//getJSON
+    }//getJSON
 }//weather
