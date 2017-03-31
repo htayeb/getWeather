@@ -130,7 +130,6 @@ function weather(urlAddress){
         $('#theTempL').html(temperature);
         console.log(temperature);
 
-
         // Find the wind and assign it
         var wind = currentCondition.find("wind");
         var direction = wind.find("direction");
@@ -145,8 +144,8 @@ function weather(urlAddress){
         var forcasts = forecastGroup.find('forecast');
 
         // First night or day for the next two nights and two days
-        for (var i = 1; i<5; i++) {
-
+       for (var i = 1; i<5; i++) {
+   
             var period = forcasts.find("period");       // period contains day/night data
             var temp = forcasts.find("temperature");    // contains temperature data
             var summery = forcasts.find('textSummary'); // contains weather summery such rain,sunny, cloudy ...
@@ -156,7 +155,8 @@ function weather(urlAddress){
             var imgIcone = 'img#day'+i+'Icon';   // the id of image in html file
             $(dayName).html(period[i].textContent);
             $(deyDeg).html(temp[i].textContent+' &deg;C');
-            // plot the condition select the niht or the day. and the condition raining or sunny or other.
+
+            // plot the condition select the niht or the day. and the condition raining or sunny or other.  
             period = period[i].textContent;
             if(period.search("night")!==-1){
                 if(summery.search("rain")!==-1){
