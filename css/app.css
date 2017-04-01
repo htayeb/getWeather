@@ -222,7 +222,15 @@ h1.temp {
 
 }
 
-
+src {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 100%;
+	outline: 0;
+	outline: 0;
+	height: auto;
+	-ms-interpolation-mode: bicubic;
+}
 /*p#notFound {
 	display: inline;
 

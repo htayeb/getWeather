@@ -99,28 +99,28 @@ function weather(urlAddress){
         hour = hour.find('hour');
         hour = hour[1].textContent;
 
-        $('img#condition').attr('class','');
+        $('src#condition').attr('class','');
         if((condition.search('Cloudy'))!==-1){
             if(hour >=6 && hour <=19){
-                $('img#condition').addClass('conditionCloudDay')
+                $('src#condition').addClass('conditionCloudDay')
             }else {
-                $('img#condition').addClass('conditionCloudNight')
+                $('src#condition').addClass('conditionCloudNight')
             }
         } else if((condition.search('Snow'))!==-1){
-            $('img#condition').attr('class','');
-            $('img#condition').addClass('conditionSnow');
+            $('src#condition').attr('class','');
+            $('src#condition').addClass('conditionSnow');
 
         } else if((condition.search('Rain'))!==-1){
-            $('img#condition').attr('class','');
-            $('img#condition').addClass('conditionRain')
+            $('src#condition').attr('class','');
+            $('src#condition').addClass('conditionRain')
 
         } else {
-            $('img#condition').attr('class','');
+            $('src#condition').attr('class','');
 
             if(hour >=6 && hour <=19){
-                $('img#condition').addClass('conditionDay')
+                $('src#condition').addClass('conditionDay')
             }else {
-                $('img#condition').addClass('conditionNight')
+                $('src#condition').addClass('conditionNight')
             }
         }
 
@@ -154,7 +154,7 @@ function weather(urlAddress){
             summery = summery[i].textContent;
             var dayName = '#day'+i+'Name';       // the id of day in html file
             var deyDeg = '#nextDay'+i+'Deg';     // the id of temperature in html file
-            var imgIcone = 'img#day'+i+'Icon';   // the id of image in html file
+            var imgIcone = 'src#day'+i+'Icon';   // the id of image in html file
             $(dayName).html(period[i].textContent);
             $(deyDeg).html(temp[i].textContent+' &deg;C');
 
