@@ -38,6 +38,7 @@ function weather(urlAddress){
         "&format=xml&diagnostics=false&_nocache=" + cacheBuster + "&callback=?"
 
     ].join("");
+    
 
     $.getJSON(yqlURL, function(data){
         //console.log(data.results[0]);
@@ -65,7 +66,9 @@ function weather(urlAddress){
         date = date[0].textContent;
         var patDate = /.+ 2017 /;
         date = patDate.exec(date);
-    
+        // date = date.toString();
+        // date = date.replace(",2017", "");
+
         $('#theDay').html(date);
         // find the general weather
         var condition = currentCondition.find("condition");
