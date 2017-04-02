@@ -1,4 +1,3 @@
-
 // findWeather id, on click get the city name and search for site key to get 
 // the url for the city.
 
@@ -34,12 +33,6 @@ function weather(urlAddress){
         "?q=" + encodeURIComponent("select * from xml where url='" + xmlSource + "'"),
         "&format=xml&_nocache=" + cacheBuster +"callback=cbfunc&_maxage=3600"
     ].join("");
-<<<<<<< HEAD
-    
-
-    $.getJSON(yqlURL, function(data){
-        //console.log(data.results[0]);
-=======
     //Override Jquery .ajax call to enable cache
     $.ajax({
         url: yqlURL,
@@ -49,7 +42,6 @@ function weather(urlAddress){
     });
 
     window.cbfunc = function(data){
->>>>>>> 95c4d406beeda2c97a36850dc3c4df9fe09d4eb9
         xmlContent = $(data.results[0]);
         // The City name and the region
         var location = xmlContent.find("location");
@@ -73,11 +65,6 @@ function weather(urlAddress){
         date = date[0].textContent;
         var patDate = /.+ 2017 /;
         date = patDate.exec(date);
-<<<<<<< HEAD
-        // date = date.toString();
-        // date = date.replace(",2017", "");
-=======
->>>>>>> 95c4d406beeda2c97a36850dc3c4df9fe09d4eb9
 
         $('#theDay').html(date);
         // find the general weather
