@@ -25,24 +25,36 @@
             <h2 class="theCity" id="theCity"></h2>
         </div>
     </div>
-
-        <div class="hide-for-large">
-
-            <div class="small-8 small-centered columns">
-
-                <img id="condition">
-                <h1 id="theTemp" class="small-8 small-centered columns temp " style="margin-left: 25%;"></h1>
-
+    <!--Weather warning if exists------------------------------------------------------------------------>
+    <div class="myWarning" style="display: none;">
+        <div class="row">
+            <div class="small-12 small-centered columns padding-left: 0px;  padding-right: 11px;">
+                <div data-alert class="alert-box alert radius">
+                    <strong class="warningDesc"></strong>
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                </div>
             </div>
+        </div>
+    </div>
+    <!--=========================------------------------------------------------------------------------>
 
+    <div class="hide-for-large">
+
+        <div class="small-8 small-centered columns">
+
+            <src id="condition"></src>
+            <h1 id="theTemp" class="small-8 small-centered columns temp " style="margin-left: 25%;"></h1>
 
         </div>
+
+
+    </div>
     <div class="row" style="padding-top: 5%;">
         <div class="show-for-large">
             <div class="row">
             <div class="small-6 large-7 columns">
 
-                <img id="condition">
+                <src id="condition"></src>
                 <h1 id="theTempL" class="medium-1 large-1 temp "></h1>
 
             </div>
@@ -112,25 +124,25 @@
 <footer class="footer">
     <div class="show-for-large">
         <div class="row">
-            <div class="small-3 medium-3 large-3  columns" style="  padding-right: 44px; padding-left: 0px;">
+            <div class="small-3 medium-3 large-3  columns" style="  padding-right: 14px; padding-left: 0px;">
                 <div class="nextDays small-12 medium-12 large-12 text-center">
                     <h4 class="theNextDay1" id="day1Name"></h4>
-                    <img  id="day1Icon" class="text-center">
+                    <src  id="day1Icon" class="text-center"></src>
                     <h4  id="nextDay1Deg"></h4>
                 </div>
             </div>
-            <div class="small-3 medium-3 large-3  columns" style="  padding-right: 44px; padding-left: 0px;">
+            <div class="small-3 medium-3 large-3  columns" style="  padding-right: 14px; padding-left: 0px;">
                 <div class="nextDays small-12 medium-12 large-12 text-center">
                     <h4 class="theNextDay" id="day2Name"></h4>
-                    <img  id="day2Icon" class="text-center">
+                    <src  id="day2Icon" class="text-center"></src>
                     <h4  id="nextDay2Deg"></h4>
 
                 </div>
             </div>
-            <div class="small-3 medium-3 large-3  columns" style="  padding-right: 44px; padding-left: 0px;">
+            <div class="small-3 medium-3 large-3  columns" style="  padding-right: 14px; padding-left: 0px;">
                 <div class="nextDays small-12 medium-12 large-12 text-center">
                     <h4 class="theNextDay" id="day3Name"></h4>
-                    <img  id="day3Icon" class="text-center">
+                    <src  id="day3Icon" class="text-center"></src>
                     <h4  id="nextDay3Deg"></h4>
                 </div>
             </div>
@@ -138,7 +150,7 @@
             <div class="small-3 medium-3 large-3  columns" style="  padding-right: 10px; padding-left: 0px;">
                 <div class="nextDays small-12 medium-12 large-12 text-center">
                     <h4 class="theNextDay" id="day4Name"></h4>
-                    <img  id="day4Icon" class="text-center">
+                    <src  id="day4Icon" class="text-center"></src>
                     <h4  id="nextDay4Deg"></h4>
                 </div>
             </div>
