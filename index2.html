@@ -14,7 +14,8 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <style> @import url('https://fonts.googleapis.com/css?family=Dosis'); </style>
 </head>
-<body>
+<body >
+<div id="wholePage">
 <!--============================================================================================================================-->
     <!-- Hero Section -->
 <!--============================================================================================================================-->
@@ -23,6 +24,8 @@
             <div  class="small-6 large-centered columns city" style="padding-top: 15%;">
                 <ul id="scene">
                     <li class="layer" id="first" data-depth="0.60" style="padding-top: 15%;"><img src ="images/logo.png"></li>
+                    <!-- Second idea is to link the logo with weather.html and once it is clicked, you go to weather link -->
+                    <!-- <li class="layer" id="first" data-depth="0.60" style="padding-top: 15%;"><a href="weather.html"><img src ="images/logo.png"></a></li> -->
                 </ul>
             </div>
         </div>
@@ -47,11 +50,14 @@
 <!--============================================================================================================================-->
     <!-- Scripts       -->
 <!--============================================================================================================================-->
+</div>
     <script src="deploy/parallax.js"></script>
     <script>
         var scene = document.getElementById('scene');
         var parallax = new Parallax(scene);
     </script>
+    <script src="js/locationDetection.js"></script>
+    <script src="js/loadIndex.js"></script>
     <script src="js/citiesProsNames.js"></script>
     <script src="js/data.js"></script>
     <script src="js/vendor/what-input.js"></script>
