@@ -14,7 +14,7 @@ $('#findWeather').click(function(){
         }).key_site;
 
     }else{
-
+        console.log("Here")
         $('#notFound').show();
     }
 

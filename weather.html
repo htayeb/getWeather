@@ -25,7 +25,7 @@
             <h2 class="theCity" id="theCity"></h2>
         </div>
     </div>
-    <!--Weather warning if exists------------------------------------------------------------------------>
+    <!--Weather warning if exists ------------------------------------------------------------------------>
     <div class="myWarning" style="display: none;">
         <div class="row">
             <div class="small-12 small-centered columns padding-left: 0px;  padding-right: 11px;">
@@ -36,7 +36,7 @@
             </div>
         </div>
     </div>
-    <!--=========================------------------------------------------------------------------------>
+    <!--========================= ------------------------------------------------------------------------>
 
     <div class="hide-for-large">
 
@@ -52,12 +52,14 @@
     <div class="row" style="padding-top: 5%;">
         <div class="show-for-large">
             <div class="row">
-            <div class="small-6 large-7 columns">
-
-                <src id="condition"></src>
-                <h1 id="theTempL" class="medium-1 large-1 temp "></h1>
-
-            </div>
+                <div class="small-6 large-7 columns">
+                    
+                    <src id="condition"></src>
+                    
+                    
+                    <h1 id="theTempL" class="medium-1 large-1 temp "></h1>
+                    
+                </div>
 
                 <div class="small-3 medium-3 large-5 columns" style="padding-left: 147px; padding-right: 27px;">
 
@@ -91,18 +93,18 @@
 
 
 
-        <div class="small-5  large-1 columns"><!-- ... --></div>
+            <div class="small-5  large-1 columns"><!-- ... --></div>
 
-        <div class="small-6 small-offset-2 large-6 large-offset-3 medium-6 medium-offset-3 columns">
-            <form class="form">
-                <input type="text" placeholder="Type your location, e.g. Victoria, BC  " id="cityName"/>
-            </form>
-        </div>
-        <!--  <p id="notFound" hidden="true">type City, PR</p> -->
+            <div class="small-6 small-offset-2 large-6 large-offset-3 medium-6 medium-offset-3 columns">
+                <form class="form">
+                    <input type="text" placeholder="Type your location, e.g. Victoria, BC  " id="cityName"/>
+                </form>
+                <p id="notFound" class="text-center" hidden="true">type City, PR e.g. Victoria, BC</p>
+            </div>
+         
         <div class=" small-2 large-3 medium-3 columns">
             <a class="fa fa-map-marker fa-3x " style="color:white;" aria-hidden="true" id="findWeather"></a>
-
-
+            
         </div>
     </div>
         </div>

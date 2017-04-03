@@ -70,6 +70,7 @@ p#notFound {
 	background-color: #cc4b37;
 	color: #fff;
 	border-radius: 5px;
+	t
 }
 
 /*.content {*/
@@ -214,7 +215,7 @@ h4.rightData {
 h1.temp {
 	font-family: 'Dosis', sans-serif;
 	display: inline;
-	margin-left: 90px;
+	margin-left: 230px;
 	font-size: 50px;
 	font-size: 3.5em;
 	text-align: center;
