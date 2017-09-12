@@ -2,6 +2,7 @@
 // the url for the city.
 
 $('#findWeather').click(function(){
+    console.log("Im Here");
     theSelectedCity = $('#cityName').val();
     $('#notFound').hide();
     if(theSelectedCity) {
@@ -157,7 +158,7 @@ function weather(urlAddress){
             $(dayName).html(period[i].textContent);
             $(deyDeg).html(temp[i].textContent+' &deg;C');
 
-            // plot the condition select the niht or the day. and the condition raining or sunny or other.  
+            // plot the condition select the night or the day. and the condition raining or sunny or other.
             period = period[i].textContent;
             if(period.search("night")!==-1){
                 if(summery.search("rain")!==-1){

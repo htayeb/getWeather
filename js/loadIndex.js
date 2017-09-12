@@ -77,9 +77,15 @@ navigator.permissions.query({name:'geolocation'})
   .then(function(permissionStatus) {  
     // console.log('geolocation permission state is ', permissionStatus.state);
     if(permissionStatus.state==="denied") {
-  			setTimeout(function () {
-    	   window.location.href = "weather.html"; //will redirect to your blog page (an ex: weather.html)
-    	    }, 1500); //will call the function after 2 secs.
+        unhide('searchBar', 'mainLogo');
+        $('.clicked').click(function(){
+            unhide('crazy', 'searchBar2');
+        })
+        // unhide('mainLogo', 'searchBar');
+
+  			// setTimeout(function () {
+    	   // window.location.href = "weather.html"; //will redirect to your blog page (an ex: weather.html)
+    	   //  }, 1500); //will call the function after 2 secs.
   	}else if(permissionStatus.state==="granted") {
   		   setTimeout(function () {
     	   window.location.href = "weather.html"; //will redirect to your blog page (an ex: weather.html)
@@ -91,7 +97,10 @@ navigator.permissions.query({name:'geolocation'})
 
       // console.log('geolocation permission state has changed to ', this.state);
       if(this.state==="denied"){
-      	window.location.href = "weather.html"; 
+          unhide('searchBar', 'mainLogo');
+          $('.clicked').click(function(){
+              unhide('crazy', 'searchBar2');
+          })
   		} else if(this.state==="granted") {
   		   setTimeout(function () {
     	   window.location.href = "weather.html"; //will redirect to your blog page (an ex: weather.html)
@@ -103,4 +112,11 @@ navigator.permissions.query({name:'geolocation'})
 			    // $('#wholePage').load(url + ' #wholePage').hide().delay( 3000 ).fadeIn( 3000 );
     };
   });
-		
+
+function unhide(divID, otherDivId) {
+    var item = document.getElementById(divID);
+    if (item) {
+        item.className=(item.className==='hidden')?'unhidden':'hidden';
+    }
+    document.getElementById(otherDivId).className = 'hidden';
+}

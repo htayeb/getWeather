@@ -350,7 +350,13 @@ Footer
 	width: 90px;
 	height: 90px;
 }
+.hidden{
+	display:none;
+}
 
+.unhidden{
+	display:block;
+}
 /*ul .ui-menu ui-widget ui-widget-content ui-autocomplete ui-front*/
 /*ul#ui-id-1 {
 	max-height: 200px;
