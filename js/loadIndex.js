@@ -78,7 +78,7 @@ navigator.permissions.query({name:'geolocation'})
     // console.log('geolocation permission state is ', permissionStatus.state);
     if(permissionStatus.state==="denied") {
         unhide('searchBar', 'mainLogo');
-        $("#test").delay(1000).animate({"opacity": "1"}, 700);
+        $(".fadeTransition").delay(1000).animate({"opacity": "1"}, 700);
         $('.clicked').click(function(){
             if (myflag === true){
                 $('#notFound').show();
@@ -107,7 +107,7 @@ navigator.permissions.query({name:'geolocation'})
       // console.log('geolocation permission state has changed to ', this.state);
       if(this.state==="denied"){
           unhide('searchBar', 'mainLogo');
-          $("#test").delay(1000).animate({"opacity": "1"}, 700);
+          $(".fadeTransition").delay(1000).animate({"opacity": "1"}, 700);
           $('.clicked').click(function(){
               if (myflag === true){
                   $('#notFound').show();

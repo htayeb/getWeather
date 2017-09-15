@@ -6,7 +6,7 @@ $('#findWeather').click(function(){
     theSelectedCity = $('#cityName').val();
     $('#notFound').hide();
     if(theSelectedCity) {
-        return "procced";
+
         var result = citiesID.find(function (d) {
             if(d.city!=theSelectedCity){
 
