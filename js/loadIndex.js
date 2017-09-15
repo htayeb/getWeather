@@ -78,8 +78,10 @@ navigator.permissions.query({name:'geolocation'})
     // console.log('geolocation permission state is ', permissionStatus.state);
     if(permissionStatus.state==="denied") {
         unhide('searchBar', 'mainLogo');
+        $("#test").delay(1000).animate({"opacity": "1"}, 700);
         $('.clicked').click(function(){
-            unhide('crazy', 'searchBar2');
+            unhide('workingWeather', 'searchBar2');
+            $("#testt").delay(1000).animate({"opacity": "1"}, 700);
         })
         // unhide('mainLogo', 'searchBar');
 
@@ -87,9 +89,10 @@ navigator.permissions.query({name:'geolocation'})
     	   // window.location.href = "weather.html"; //will redirect to your blog page (an ex: weather.html)
     	   //  }, 1500); //will call the function after 2 secs.
   	}else if(permissionStatus.state==="granted") {
-  		   setTimeout(function () {
-    	   window.location.href = "weather.html"; //will redirect to your blog page (an ex: weather.html)
-    	    }, 1500); //will call the function after 2 secs.
+        unhide('workingWeather', 'mainLogo');
+  		  //  setTimeout(function () {
+    	   // window.location.href = "weather.html"; //will redirect to your blog page (an ex: weather.html)
+    	   //  }, 1500); //will call the function after 2 secs.
   	}
     
 
@@ -98,13 +101,18 @@ navigator.permissions.query({name:'geolocation'})
       // console.log('geolocation permission state has changed to ', this.state);
       if(this.state==="denied"){
           unhide('searchBar', 'mainLogo');
+          $("#test").delay(1000).animate({"opacity": "1"}, 700);
           $('.clicked').click(function(){
-              unhide('crazy', 'searchBar2');
+              unhide('workingWeather', 'searchBar2');
+              $("#testt").delay(1000).animate({"opacity": "1"}, 700);
           })
   		} else if(this.state==="granted") {
-  		   setTimeout(function () {
-    	   window.location.href = "weather.html"; //will redirect to your blog page (an ex: weather.html)
-    	    }, 3000); //will call the function after 2 secs.
+          unhide('workingWeather', 'mainLogo');
+          $("#testt").delay(1000).animate({"opacity": "1"}, 700);
+
+  		  //  setTimeout(function () {
+    	   // window.location.href = "weather.html"; //will redirect to your blog page (an ex: weather.html)
+    	   //  }, 3000); //will call the function after 2 secs.
   		}
 
       //Here in the next few line is to try to make the page load dynamically but 

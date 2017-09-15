@@ -2,47 +2,7 @@
 /******************************************************************
 General
 ******************************************************************/
-
-/******************************************************************
-Alert Box
-******************************************************************/
-.alert-box {
-	padding: 1.3rem;
-	border-width: 0 0 0 0.35rem;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1.3rem;
-}
-.alert-box.radius {
-	border-radius: 1.6rem;
-}
-
-.alert-box.alert {
-	border-left-color: #f22613;
-	background-color: #f77d71;
-}
-.alert-box.alert strong {
-	color: #f5f5f5;
-    text-transform: capitalize;
-}
-/* The close button */
-.closebtn {
-    margin-left: 15px;
-    color: white;
-    font-weight: bold;
-    float: right;
-    font-size: 22px;
-    line-height: 20px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-/* When moving the mouse over the close button */
-.closebtn:hover {
-    color: #36445d;
-}
-/*================================================================*/
 body {
-	/*background-color: #F44336;*/
 	background-size:200% 200%;
 	background: url("../images/wallpaper.png") no-repeat;
 	width: 100%;
@@ -63,22 +23,12 @@ body {
 	margin-bottom: 10px;
 }
 
-.alert-box .alert .round{background-color: red;}
-
-
-p#notFound {
+#notFound {
 	background-color: #cc4b37;
 	color: #fff;
 	border-radius: 5px;
-	t
 }
 
-/*.content {*/
-	/**/
-	/*height: 44px;*/
-	/*background-color: rgba(255,255,255,0.2);*/
-	/*margin-top: 1px*/
-/*}*/
 .content {
 	height: 44px;
 	background-color: rgb(221, 235, 241);
@@ -87,40 +37,26 @@ p#notFound {
 	color: #36445d;
 }
 #condition {
-	
-	/*background: url("../cloudynight.png") ;*/
+
 	width: 258px;
 	height: 258px;
 	border-image: none;
-	/*border: 3px solid transparent;*/
 	color: transparent;
 	border: none;
-	/*background-color: white;*/
-
-	/*border-radius: 160px;*/
-	/*border: 2px solid transparent;*/
-	
-
 }
 .test{
 	background-color: #4CAF50;
 	color: #0c3d5d;
 }
 .conditionRain {
-	
-	/*background: url("../cImages/rain.png") ;*/
 	background: url("../icons/rainy-weather.png")no-repeat top left;
 	background-size: contain;
 	fill: #d33b53;
-	/*width: 258px;*/
-	/*height: 258px;*/
 	border-image: none;
-
 	color: transparent;
 	opacity: .9;
 }
 .conditionSnow{
-	
 	background: url("../icons/snow-weather.png")no-repeat top left;
 	background-size: contain;
 	width: 258px;
@@ -130,7 +66,6 @@ p#notFound {
 	opacity: .9;
 }
 .conditionCloudNight {
-	
 	background: url("../icons/mostly-cloudy-night.png")no-repeat top left;
 	background-size: contain;
 	width: 258px;
@@ -140,19 +75,14 @@ p#notFound {
 	opacity: .9;
 }
 .conditionCloudDay{
-	
-	/*background: url("../cImages/cloudyday.png") ;*/
 	background: url("../icons/mostly-cloudy.png")no-repeat top left;
 	background-size: contain;
 	fill: #94d31b;
-	/*width: 258px;*/
-	/*height: 258px;*/
 	border-image: none;
 	color: transparent;
 	opacity: .9;
 }
 .conditionNight{
-	
 	background: url("../icons/clear-night.png")no-repeat top left;
 	background-size: contain;
 	width: 258px;
@@ -162,7 +92,6 @@ p#notFound {
 	opacity: .9;
 }
 .conditionDay{
-	
 	background: url("../icons/clear-day.png")no-repeat top left;
 	background-size: contain;
 	width: 258px;
@@ -171,35 +100,29 @@ p#notFound {
 	color: transparent;
 	opacity: .9;
 }
-
 form {
 	margin-top: 20px;
 }
 input {
-	
 	opacity: 0.5;
-	
 }
 a {
 	margin-top: 15px;
 	opacity: 0.5;
 }
 .theCity {
-
 	font-family: 'Dosis', sans-serif;
 	font-size: 36px; /* Some tweener fallback that doesn't look awful */
 	font-size: 3.5em;
 	text-align: center;
 }
 .theTemp {
-
 	font-family: 'Dosis', sans-serif;
 	font-size: 36px; /* Some tweener fallback that doesn't look awful */
 	font-size: 3.5em;
 	text-align: center;
 }
 .love {
-
 	font-family: 'Dosis', sans-serif;
 	font-size: 36px; /* Some tweener fallback that doesn't look awful */
 	font-size: 1.5em;
@@ -219,8 +142,6 @@ h1.temp {
 	font-size: 50px;
 	font-size: 3.5em;
 	text-align: center;
-
-
 }
 
 src {
@@ -232,11 +153,7 @@ src {
 	height: auto;
 	-ms-interpolation-mode: bicubic;
 }
-/*p#notFound {
-	display: inline;
 
-
-}*/
 /******************************************************************
 Hero
 ******************************************************************/
@@ -261,9 +178,6 @@ Hero
 	padding-top: 5px;
 }
 
-/******************************************************************
-Footer
-******************************************************************/
 .nextDays {
 	height: 200px;
 	/*width: 80%;*/
@@ -357,15 +271,95 @@ Footer
 .unhidden{
 	display:block;
 }
-/*ul .ui-menu ui-widget ui-widget-content ui-autocomplete ui-front*/
-/*ul#ui-id-1 {
-	max-height: 200px;
-	height: 200px
+/******************************************************************
+Footer
+******************************************************************/
+.footer {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+	text-align: center;
 }
-*/
+/******************************************************************
+/*Keyframes & Animation
+******************************************************************/
+
+@keyframes fadein {
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
+}
+@-moz-keyframes fadein { /* Firefox */
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+@-o-keyframes fadein { /* Opera */
+	from {
+		opacity:0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.fadeTransition {
+
+	animation: fadein 2s;
+	-moz-animation: fadein 2s; /* Firefox */
+	-webkit-animation: fadein 2s; /* Safari and Chrome */
+	-o-animation: fadein 2s; /* Opera */
+}
 
 
+/******************************************************************
+Alert Box
+******************************************************************/
+.alert-box {
+	padding: 1.3rem;
+	border-width: 0 0 0 0.35rem;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.3rem;
+}
+.alert-box.radius {
+	border-radius: 1.6rem;
+}
 
+.alert-box.alert {
+	border-left-color: #f22613;
+	background-color: #f77d71;
+}
+.alert-box.alert strong {
+	color: #f5f5f5;
+	text-transform: capitalize;
+}
+/* The close button */
+.closebtn {
+	margin-left: 15px;
+	color: white;
+	font-weight: bold;
+	float: right;
+	font-size: 22px;
+	line-height: 20px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.alert-box .alert .round{background-color: red;}
+/* When moving the mouse over the close button */
+.closebtn:hover {
+	color: #36445d;
+}
 
 
 

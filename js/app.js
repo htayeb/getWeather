@@ -126,6 +126,7 @@ function weather(urlAddress){
 
         // find the temperature
         var temperature = currentCondition.find('temperature');
+        console.log("This is me" + temperature);
         temperature = temperature[0].textContent + ' &deg;C';
         $('#theTemp').html(temperature);
         // Another Var to fill temp with large screens
