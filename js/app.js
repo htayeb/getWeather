@@ -1,11 +1,12 @@
 // findWeather id, on click get the city name and search for site key to get 
 // the url for the city.
-
+var myflag=false;
 $('#findWeather').click(function(){
     console.log("Im Here");
     theSelectedCity = $('#cityName').val();
     $('#notFound').hide();
     if(theSelectedCity) {
+        return "procced";
         var result = citiesID.find(function (d) {
             if(d.city!=theSelectedCity){
 
@@ -15,6 +16,7 @@ $('#findWeather').click(function(){
         }).key_site;
 
     }else{
+        myflag=true;
         console.log("Here")
         $('#notFound').show();
     }

@@ -80,8 +80,14 @@ navigator.permissions.query({name:'geolocation'})
         unhide('searchBar', 'mainLogo');
         $("#test").delay(1000).animate({"opacity": "1"}, 700);
         $('.clicked').click(function(){
-            unhide('workingWeather', 'searchBar2');
-            $("#testt").delay(1000).animate({"opacity": "1"}, 700);
+            if (myflag === true){
+                $('#notFound').show();
+            }     else{
+
+                unhide('workingWeather', 'searchBar2');
+                $('.fadeTransition').delay(1000).animate({"opacity": "1"}, 700);
+            }
+
         })
         // unhide('mainLogo', 'searchBar');
 
@@ -103,12 +109,17 @@ navigator.permissions.query({name:'geolocation'})
           unhide('searchBar', 'mainLogo');
           $("#test").delay(1000).animate({"opacity": "1"}, 700);
           $('.clicked').click(function(){
-              unhide('workingWeather', 'searchBar2');
-              $("#testt").delay(1000).animate({"opacity": "1"}, 700);
+              if (myflag === true){
+                  $('#notFound').show();
+              }     else{
+
+                  unhide('workingWeather', 'searchBar2');
+                  $('.fadeTransition').delay(1000).animate({"opacity": "1"}, 700);
+              }
           })
   		} else if(this.state==="granted") {
           unhide('workingWeather', 'mainLogo');
-          $("#testt").delay(1000).animate({"opacity": "1"}, 700);
+          $(".fadeTransition").delay(1000).animate({"opacity": "1"}, 700);
 
   		  //  setTimeout(function () {
     	   // window.location.href = "weather.html"; //will redirect to your blog page (an ex: weather.html)

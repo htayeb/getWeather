@@ -10,6 +10,7 @@ body {
 	margin-top: 50px;
 	color: #fff;
 	font-family: 'Dosis', sans-serif;
+
 }
 #first{
 	background-size: contain;
@@ -23,12 +24,15 @@ body {
 	margin-bottom: 10px;
 }
 
-#notFound {
+p#notFound {
 	background-color: #cc4b37;
 	color: #fff;
 	border-radius: 5px;
 }
+form input::-webkit-input-placeholder{
+	color: #2f9fe0 ;
 
+}
 .content {
 	height: 44px;
 	background-color: rgb(221, 235, 241);
@@ -105,6 +109,8 @@ form {
 }
 input {
 	opacity: 0.5;
+	border: 2px solid red;
+	border-radius: 4px;
 }
 a {
 	margin-top: 15px;
