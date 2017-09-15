@@ -161,6 +161,13 @@ h1.temp {
 	font-size: 3.5em;
 	text-align: center;
 }
+#theTemp {
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
 
 src {
 	display: inline-block;
@@ -294,7 +301,7 @@ Hero
 Footer
 ******************************************************************/
 .footer {
-	position: absolute;
+	position: sticky;
 	right: 0;
 	bottom: 0;
 	left: 0;
