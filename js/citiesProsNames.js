@@ -2,6 +2,7 @@
 // The name of Canadian cities and thier provinces 
 // arranged as array of string
 $(function(){
+    var previousValue = "";
     var cities = 
 [ 
 "100 Mile House, BC", 
@@ -842,10 +843,23 @@ $(function(){
 "Yorkton, SK"
 ];
 
-    // Autocomplete to find the city and pro. Name 
-    $('#cityName').autocomplete({ 
-        minLength: 3, 
+    // Autocomplete to find the city and pro. Name
+    $('#cityName').autocomplete({
+        autoFocus: true,
+        minLength: 1,
         source: cities
-    });
+    }).keyup(function() {
+        var isValid = false;
+        for (let i in cities) {
+            if (cities[i].toLowerCase().match(this.value.toLowerCase())) {
+                isValid = true;
+            }
+        }
+        if (!isValid) {
+            this.value = previousValue
+        } else {
+            previousValue = this.value;
+        }});
+
 
 });

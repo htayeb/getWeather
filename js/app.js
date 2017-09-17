@@ -1,9 +1,27 @@
 // findWeather id, on click get the city name and search for site key to get 
 // the url for the city.
 var myflag=false;
+// var clicked = false;
+
+
+// $("#cityName").keyup(function(event){
+//
+//     if(event.keyCode == 13){
+//         console.log("clicked enter")
+//         $("#findWeather").click();
+//         // event.preventDefault();
+//
+//     }
+// });
+
+
 $('#findWeather').click(function(){
+
     console.log("Im Here");
     theSelectedCity = $('#cityName').val();
+
+
+
     $('#notFound').hide();
     if(theSelectedCity) {
 
@@ -18,7 +36,6 @@ $('#findWeather').click(function(){
     }else{
         myflag=true;
         console.log("Here")
-        $('#notFound').show();
     }
 
     var url = "http://dd.weather.gc.ca/citypage_weather/xml"+result;

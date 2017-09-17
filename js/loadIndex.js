@@ -82,8 +82,11 @@ navigator.permissions.query({name:'geolocation'})
         $('.clicked').click(function(){
             if (myflag === true){
                 $('#notFound').show();
+                console.log("before " + myflag);
+                myflag = false;
+                console.log("after " + myflag);
             }     else{
-
+                $('#notFound').hide();
                 unhide('workingWeather', 'searchBar2');
                 $('.fadeTransition').delay(1000).animate({"opacity": "1"}, 700);
             }
@@ -111,8 +114,11 @@ navigator.permissions.query({name:'geolocation'})
           $('.clicked').click(function(){
               if (myflag === true){
                   $('#notFound').show();
+                  console.log("before " + myflag);
+                  myflag = false;
+                  console.log("after " + myflag);
               }     else{
-
+                  $('#notFound').hide();
                   unhide('workingWeather', 'searchBar2');
                   $('.fadeTransition').delay(1000).animate({"opacity": "1"}, 700);
               }
