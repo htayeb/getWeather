@@ -2,42 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="657cde36-dace-487c-ae20-ca6be5e3a45f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cImages/a.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cImages/b.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cImages/cloudyday.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cImages/cloudynight.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cImages/day.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cImages/mostlycloudy.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cImages/night.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cImages/nightrain.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cImages/rain.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cImages/snow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deploy/jquery.parallax.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deploy/jquery.parallax.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/a.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/b.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/bubbly.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/c.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/clearnight.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/date.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/dayraining.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/dayshower.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ep_naturalblack.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ep_naturalwhite.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/food.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lava.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/mostlyCouldy.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/nightSnow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/nightSnowCloudy.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/nightpartlycloudy.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/nightraining.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/nightshower.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/old_map.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/slider2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/snow.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/squares_widew.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/wind.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -121,8 +87,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="63">
-                <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <first_editor relative-caret-position="42">
+                <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -404,15 +370,16 @@
       <workItem from="1505517549008" duration="42000" />
       <workItem from="1505518016761" duration="48000" />
       <workItem from="1505844281107" duration="237000" />
-      <workItem from="1505889929604" duration="242000" />
+      <workItem from="1505889929604" duration="390000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70425000" />
+    <option name="totallyTimeSpent" value="70573000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -421,7 +388,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.100520834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.100520834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -845,8 +812,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="63">
-            <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <first_editor relative-caret-position="42">
+            <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             <folding />
           </first_editor>
           <second_editor />
