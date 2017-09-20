@@ -2,11 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="657cde36-dace-487c-ae20-ca6be5e3a45f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cImages/a.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cImages/b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cImages/cloudyday.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cImages/cloudynight.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cImages/day.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cImages/mostlycloudy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cImages/night.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cImages/nightrain.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cImages/rain.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cImages/snow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/deploy/jquery.parallax.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/deploy/jquery.parallax.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/a.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/bubbly.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/c.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/clearnight.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/date.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/dayraining.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/dayshower.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ep_naturalblack.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ep_naturalwhite.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/food.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/lava.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/mostlyCouldy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/nightSnow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/nightSnowCloudy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/nightpartlycloudy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/nightraining.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/nightshower.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/old_map.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/slider2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/snow.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/squares_widew.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/wind.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
+    <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,13 +50,12 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1230">
+            <state relative-caret-position="1722">
               <caret line="82" column="26" lean-forward="false" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -55,9 +90,29 @@
       <file leaf-file-name="app.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4605">
-              <caret line="307" column="14" lean-forward="false" selection-start-line="307" selection-start-column="14" selection-end-line="307" selection-end-column="14" />
-              <folding />
+            <state relative-caret-position="6447">
+              <caret line="310" column="21" lean-forward="false" selection-start-line="310" selection-start-column="21" selection-end-line="310" selection-end-column="21" />
+              <folding>
+                <marker date="1505889904437" expanded="true" signature="5501:5624" ph="{...}" />
+                <marker date="1505889904437" expanded="true" signature="5625:5784" ph="/*...*/" />
+                <marker date="1505889904437" expanded="true" signature="5804:5853" ph="..." />
+                <marker date="1505889904437" expanded="true" signature="5812:5829" ph="{...}" />
+                <marker date="1505889904437" expanded="true" signature="5834:5851" ph="{...}" />
+                <marker date="1505889904437" expanded="true" signature="5877:5940" ph="..." />
+                <marker date="1505889904437" expanded="true" signature="5899:5916" ph="{...}" />
+                <marker date="1505889904437" expanded="true" signature="5921:5938" ph="{...}" />
+                <marker date="1505889904437" expanded="true" signature="5967:6032" ph="..." />
+                <marker date="1505889904437" expanded="true" signature="6054:6116" ph="..." />
+                <marker date="1505889904437" expanded="true" signature="6074:6091" ph="{...}" />
+                <marker date="1505889904437" expanded="true" signature="6096:6114" ph="{...}" />
+                <marker date="1505889904437" expanded="true" signature="6133:6295" ph="{...}" />
+                <marker date="1505889904437" expanded="true" signature="6298:6443" ph="/*...*/" />
+                <marker date="1505889904437" expanded="true" signature="6455:6603" ph="{...}" />
+                <marker date="1505889904437" expanded="true" signature="6622:6649" ph="{...}" />
+                <marker date="1505889904437" expanded="true" signature="6668:6728" ph="{...}" />
+                <marker date="1505889904437" expanded="true" signature="6753:6802" ph="{...}" />
+                <marker date="1505889904437" expanded="true" signature="6836:6984" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -66,8 +121,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="15">
-                <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <first_editor relative-caret-position="63">
+                <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -78,7 +133,7 @@
       <file leaf-file-name="loadIndex.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/loadIndex.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1140">
+            <state relative-caret-position="1596">
               <caret line="83" column="38" lean-forward="false" selection-start-line="83" selection-start-column="38" selection-end-line="83" selection-end-column="38" />
               <folding />
             </state>
@@ -88,7 +143,7 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
+            <state relative-caret-position="756">
               <caret line="37" column="27" lean-forward="false" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -100,7 +155,7 @@
       <file leaf-file-name="citiesProsNames.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/citiesProsNames.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12645">
+            <state relative-caret-position="17703">
               <caret line="845" column="50" lean-forward="false" selection-start-line="845" selection-start-column="50" selection-end-line="845" selection-end-column="50" />
               <folding />
             </state>
@@ -173,7 +228,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="1280" />
     <option name="height" value="800" />
   </component>
@@ -192,36 +247,34 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="getWeather" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="getWeather" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="getWeather" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="getWeather" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="getWeather" type="b2602c69:ProjectViewProjectNode" />
+              <item name="getWeather" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="getWeather" type="b2602c69:ProjectViewProjectNode" />
+              <item name="getWeather" type="462c0819:PsiDirectoryNode" />
+              <item name="deploy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="getWeather" type="b2602c69:ProjectViewProjectNode" />
+              <item name="getWeather" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="getWeather" type="b2602c69:ProjectViewProjectNode" />
+              <item name="getWeather" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -243,8 +296,13 @@
     </option>
   </component>
   <component name="RunManager" selected="Node.js.app.js">
-    <configuration default="false" name="app.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="app.js" working-dir="$PROJECT_DIR$/js">
-      <method />
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
@@ -283,15 +341,6 @@
       <option name="filePath" />
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
       <command value="run" />
       <scripts />
@@ -312,9 +361,7 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Node.js.app.js" />
-    </list>
+    <configuration name="app.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="app.js" working-dir="$PROJECT_DIR$/js" />
     <recent_temporary>
       <list size="1">
         <item index="0" class="java.lang.String" itemvalue="Node.js.app.js" />
@@ -357,48 +404,39 @@
       <workItem from="1505517549008" duration="42000" />
       <workItem from="1505518016761" duration="48000" />
       <workItem from="1505844281107" duration="237000" />
+      <workItem from="1505889929604" duration="242000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70183000" />
+    <option name="totallyTimeSpent" value="70425000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11640625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1529774" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.100520834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -805,18 +843,18 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="1" lean-forward="false" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="15">
-            <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <first_editor relative-caret-position="63">
+            <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="1" lean-forward="false" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -829,7 +867,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/citiesProsNames.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12645">
+        <state relative-caret-position="17703">
           <caret line="845" column="50" lean-forward="false" selection-start-line="845" selection-start-column="50" selection-end-line="845" selection-end-column="50" />
           <folding />
         </state>
@@ -837,7 +875,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
+        <state relative-caret-position="756">
           <caret line="37" column="27" lean-forward="false" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -847,7 +885,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/loadIndex.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
+        <state relative-caret-position="1596">
           <caret line="83" column="38" lean-forward="false" selection-start-line="83" selection-start-column="38" selection-end-line="83" selection-end-column="38" />
           <folding />
         </state>
@@ -855,7 +893,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
+        <state relative-caret-position="1722">
           <caret line="82" column="26" lean-forward="false" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -888,9 +926,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4605">
-          <caret line="307" column="14" lean-forward="false" selection-start-line="307" selection-start-column="14" selection-end-line="307" selection-end-column="14" />
-          <folding />
+        <state relative-caret-position="6447">
+          <caret line="310" column="21" lean-forward="false" selection-start-line="310" selection-start-column="21" selection-end-line="310" selection-end-column="21" />
+          <folding>
+            <marker date="1505889904437" expanded="true" signature="5501:5624" ph="{...}" />
+            <marker date="1505889904437" expanded="true" signature="5625:5784" ph="/*...*/" />
+            <marker date="1505889904437" expanded="true" signature="5804:5853" ph="..." />
+            <marker date="1505889904437" expanded="true" signature="5812:5829" ph="{...}" />
+            <marker date="1505889904437" expanded="true" signature="5834:5851" ph="{...}" />
+            <marker date="1505889904437" expanded="true" signature="5877:5940" ph="..." />
+            <marker date="1505889904437" expanded="true" signature="5899:5916" ph="{...}" />
+            <marker date="1505889904437" expanded="true" signature="5921:5938" ph="{...}" />
+            <marker date="1505889904437" expanded="true" signature="5967:6032" ph="..." />
+            <marker date="1505889904437" expanded="true" signature="6054:6116" ph="..." />
+            <marker date="1505889904437" expanded="true" signature="6074:6091" ph="{...}" />
+            <marker date="1505889904437" expanded="true" signature="6096:6114" ph="{...}" />
+            <marker date="1505889904437" expanded="true" signature="6133:6295" ph="{...}" />
+            <marker date="1505889904437" expanded="true" signature="6298:6443" ph="/*...*/" />
+            <marker date="1505889904437" expanded="true" signature="6455:6603" ph="{...}" />
+            <marker date="1505889904437" expanded="true" signature="6622:6649" ph="{...}" />
+            <marker date="1505889904437" expanded="true" signature="6668:6728" ph="{...}" />
+            <marker date="1505889904437" expanded="true" signature="6753:6802" ph="{...}" />
+            <marker date="1505889904437" expanded="true" signature="6836:6984" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
