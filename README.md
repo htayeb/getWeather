@@ -1,5 +1,6 @@
-# .getWeather
 ![Logo](https://github.com/htayeb/getWeather/blob/firstBranch/images/logo.png)
+
+# .getWeather
 Zero-click weather app gives instant location-based weather conditions from Weather Canada feed. 
 
 # Credits
