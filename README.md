@@ -1,32 +1,28 @@
 # .getWeather
 Zero-click weather app gives instant location-based weather conditions from Weather Canada feed. 
 
-Credits
+# Credits
 
 This software uses code from several open source packages.
 
 
-https://github.com/wagerfield/parallax parallax js
-Foundation 6 https://github.com/zurb/foundation-sites
-https://github.com/jquery/jquery 
-https://github.com/FortAwesome/Font-Awesome
+[ParallaxJS](https://github.com/wagerfield/parallax) 
+[Foundation 6](https://github.com/zurb/foundation-sites)
+[jQuery](https://github.com/jquery/jquery)
+[Font-Awsome](https://github.com/FortAwesome/Font-Awesome)
+
+#Links
+
+[Web site]
+[Issue tracker]
 
 
-License
+#Licenses
 
-MIT License
-License Agreement for Use of Environment and Climate Change Canada Data http://climate.weather.gc.ca/prods_servs/attachment1_e.html
+..* [License Agreement for Use of Environment and Climate Change Canada Data](http://climate.weather.gc.ca/prods_servs/attachment1_e.html)
 
 
-Links
-
-Web site
-Issue tracker
-Source code
-
-License
-
-MIT License
+..* MIT License
 
 Copyright (c) 2017 Humam Altayeb and Hussam Shubayli
 
