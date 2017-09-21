@@ -49,7 +49,7 @@ function weather(urlAddress){
     var cacheBuster = Math.floor((new Date().getTime()) / 1200 / 1000);
     // build the yql query. Could be just a string
     var yqlURL = [
-        "http://query.yahooapis.com/v1/public/yql",
+        "https://query.yahooapis.com/v1/public/yql",
         "?q=" + encodeURIComponent("select * from xml where url='" + xmlSource + "'"),
         "&format=xml&_nocache=" + cacheBuster +"callback=cbfunc&_maxage=3600"
     ].join("");

@@ -15,8 +15,8 @@ This software uses code from several open source packages.
 
 # Links
 
-[Web site] <br>
-[Issue tracker]
+[Web site](https://altayeb.me)<br>
+[Issue tracker](https://github.com/htayeb/getWeather/issues)
 
 
 # Licenses
